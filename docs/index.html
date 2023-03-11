@@ -4,6 +4,9 @@
 
 <head>
 
+<script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+       
+       
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
@@ -225,6 +228,7 @@ $(document).ready(function () {
 
 <body>
 
+ 
 
 <div class="container-fluid main-container">
 
@@ -274,7 +278,7 @@ $(document).ready(function () {
 <p>Event details will be updated here soon</p>
 </div>
 
-
+<div id="markdown-content"></div>
 
 
 </div>
@@ -317,6 +321,21 @@ $(document).ready(function () {
     script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
+</script>
+       
+ <script>
+  // Load the Markdown content from the file
+  fetch('testtext.md')
+    .then(response => response.text())
+    .then(text => {
+      // Convert the Markdown content to HTML using Showdown
+      const converter = new showdown.Converter();
+      const html = converter.makeHtml(text);
+
+      // Set the HTML content of the div element
+      const markdownContent = document.getElementById('markdown-content');
+      markdownContent.innerHTML = html;
+    });
 </script>
 
 </body>
