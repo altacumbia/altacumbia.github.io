@@ -1,0 +1,14 @@
+---
+title: "Welcome to"
+output: 
+  html_document:  
+    css:
+      "custom.css"
+editor_options: 
+  markdown: 
+    wrap: 122
+---
+
+# Alta Cumbia: A ball for the Amazon !
+
+Event details will be updated here soon

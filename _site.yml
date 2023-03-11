@@ -1,0 +1,11 @@
+title: "altacumbia"
+navbar:
+  #title: "altacumbia"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: About.html
+    - text: "Contact"
+      href: Contact.html
+output_dir: "docs"

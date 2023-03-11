@@ -1,0 +1,66 @@
+.navbar {
+  background-color: black; /* Change this to the desired color */
+  color: white; /* Add this line to set the font color to black */
+  font-weight: bold; /* Add this line to set the font weight to bold */
+}
+
+.navbar:hover {
+  background-color: darkyellow;
+}
+
+
+
+/* Highlight the selected element with a darker yellow color */
+.navbar .active {
+  background-color: black;
+}
+
+body { 
+  font-size: 14pt;
+  position: relative;
+  background-image: url('cover.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center center;
+} 
+  
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* change the opacity here */
+  z-index: -1;
+}
+ 
+@media screen and (min-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-position: center center;
+  }
+  
+  body::before {
+    background-attachment: fixed;
+  }
+  
+  body::after {
+    content: "";
+    display: block;
+    height: 100vh;
+  }
+}
+
+/* Remove the underline from links */
+a {
+  text-decoration: none;
+}
+
+/* Change the link color */
+a:link {
+  color: blue;
+}
+a:hover {
+  color: darkorange;
+}
