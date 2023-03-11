@@ -4,8 +4,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
+    - text: "about"
       href: about.html
-    - text: "Contact"
+    - text: "contact"
       href: contact.html
 output_dir: "docs"
