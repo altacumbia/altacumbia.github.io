@@ -5,7 +5,7 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "About"
-      href: About.html
+      href: about.html
     - text: "Contact"
-      href: Contact.html
+      href: contact.html
 output_dir: "docs"
