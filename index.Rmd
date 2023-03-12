@@ -11,4 +11,4 @@ editor_options:
 
 # Alta Cumbia: A ball for the Amazon !
 
-Event details will be updated here soon
+Details coming soon...
