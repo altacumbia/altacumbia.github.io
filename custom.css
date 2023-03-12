@@ -21,6 +21,8 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   background-size: cover; 
   background-position: center center;
+  width: 100vw; /* set the width to the viewport width */
+  height: 100vh; /* set the height to the viewport height */
 } 
   
 body::before {

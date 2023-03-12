@@ -53,7 +53,8 @@ body::before {
 
 .pdf-container {
   position: relative;
-  width: 100%;
+  max-width: 600px; /* set your desired maximum width */
+  margin: 0 auto; /* center the container horizontally */
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
 }
