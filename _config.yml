@@ -1,7 +1,7 @@
 # Setup
 title:        Alta Cumbia
 tagline:      A ball for the Amazon !
-baseurl:      ""
+baseurl:      "https://altacumbia.github.io/"
 paginate:     1
 locale:       "en"
 
